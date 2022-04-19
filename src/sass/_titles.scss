@@ -1,0 +1,10 @@
+.title {
+    position: relative;
+    font-family: 'El Messiri';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    @include leaf_blue;
+}

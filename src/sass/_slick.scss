@@ -1,0 +1,46 @@
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+.slick-list {
+    overflow: hidden;
+}
+
+.reviews__wrapper {
+    position: relative;
+    .slick-slide {
+        transform: scale(0.8);
+        opacity: 0.3; 
+        transition: 0.5s all ease;
+    }
+    .slick-slide.slick-current {
+        transform: scale(1);
+        opacity: 1;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        li {
+            list-style-type: none;
+            margin: 0 10px;
+        }
+        button {
+            font-size: 0;
+            width: 13px;
+            height: 13px;
+            background-color: #FFFFFF;
+            opacity: 0.4;
+            border-radius: 3px;
+            border: none;
+        }
+    }
+    li.slick-active button{
+        opacity: 1;
+    }
+}

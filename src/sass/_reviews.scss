@@ -1,0 +1,44 @@
+.reviews {
+    min-height: 735px;
+    padding-top: 150px;
+    position: relative;
+    background-color: #162831;
+    .title {
+        &:before {
+            left: 38%;
+        }
+        &:after {
+            right: 38%;
+        }
+    }
+    &__wrapper {
+        min-height: 426px;
+        margin: 0 auto;
+        margin-top: 90px;
+    }
+    &__item {
+        max-width: 500px;
+        min-height: 275px;
+        margin: 0 15px;
+        padding: 30px 45px 30px;
+        border-radius: 10px;
+        background-color: #018abe;
+        transition: 2s all;
+    }
+    &__name {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: left;
+        color: #fff;
+    }
+    &__descr {
+        margin-top: 20px;
+        height: 196px;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: left;
+        color: #fff;
+    }
+}

@@ -1,0 +1,33 @@
+.promo {
+    position: relative;
+    min-height: calc(100vh - 90px);
+    padding-top: 50px;
+    background-color: #162831;
+    &__wrapper {
+        padding: 135px 355px 195px;
+        border-radius: 10px;
+        background: url('../img/promo_bg.jpg') center (center / cover) no-repeat;
+        background-attachment: fixed;
+    }
+    &__subtitle {
+        position: relative;
+        font-family: 'El Messiri';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        @include leaf;
+    }
+    &__title {
+        margin-top: 40px;
+        font-family: 'El Messiri';
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+

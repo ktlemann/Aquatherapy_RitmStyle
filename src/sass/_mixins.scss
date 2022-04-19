@@ -1,0 +1,68 @@
+@mixin leaf {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        left: 85px;
+        width: 28px;
+        height: 14px;
+        background-color: #fff;
+        border-radius: 1px 40px;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        right: 85px;
+        width: 28px;
+        height: 14px;
+        background-color: #fff;
+        border-radius: 40px 1px;
+    }
+}
+
+@mixin leaf_blue {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 31%;
+        width: 28px;
+        height: 14px;
+        background-color: #018abe;
+        border-radius: 1px 40px;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 31%;
+        width: 28px;
+        height: 14px;
+        background-color: #018abe;
+        border-radius: 40px 1px;
+    }
+}
+
+@mixin leaf_small {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -38px;
+        width: 18px;
+        height: 9px;
+        background-color: #018abe;
+        border-radius: 0px 50px;
+    }
+}
