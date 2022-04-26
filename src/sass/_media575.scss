@@ -319,8 +319,8 @@
         }
         &__item {
             position: relative;
-            grid-template: minmax(200px, auto) / auto; 
-            grid-auto-rows: minmax(200px, auto);
+            grid-template: auto / auto; 
+            grid-auto-rows: auto;
         }
         &__date {
             margin: 0 auto;
@@ -335,7 +335,7 @@
         }
         &__descr {
             padding: 0 10px;
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 10px;
             text-align: center;
         }
