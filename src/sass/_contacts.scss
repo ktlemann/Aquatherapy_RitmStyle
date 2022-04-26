@@ -4,6 +4,8 @@
     padding-bottom: 230px;
     background-color: #162831;
     &__wrapper {
+        justify-content: center;
+        align-content: center;
         display: grid;
         grid-template: minmax(290px, auto) / 856px 392px;
         grid-auto-rows: minmax(290px, auto); 
@@ -31,6 +33,7 @@
     }
     &__element {
         display: flex;
+        align-items: center;
         margin-top: 20px;
     }
     &__descr {

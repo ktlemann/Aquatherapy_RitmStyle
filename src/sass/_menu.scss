@@ -1,0 +1,33 @@
+.menu {
+    display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding-top: 35px;
+    background-color: #162831;
+    transition: 0.8s all;
+    z-index: 10000;
+    &_active {
+        top: 0;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        margin: 0 10px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 135%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__arrow {
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}

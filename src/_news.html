@@ -40,7 +40,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="icons/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" href="icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
     <link rel="stylesheet" href="css/style.min.css">
@@ -70,6 +70,7 @@
                             <a href="index.html#about" class="header__item">Обо мне</a>
                             <a href="_blog.html" class="header__item">Блог</a>
                         </li>
+                        <div class="header__menu-btn">Меню</div>
                     </ul>
                     
                     <button class="header__btn" data-modal="consultation">Записаться на сеанс</button>
@@ -78,6 +79,25 @@
             <hr class="header__line">
         </div>
     </header>
+
+    <section class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <a href="index.html" class="menu__item">Главная</a>
+                <a href="#services" class="menu__item">Сеансы</a>
+                <a href="#reviews" class="menu__item">Отзывы</a>
+                <a href="#contacts" class="menu__item">Контакты</a>
+                <a href="_news.html" class="menu__item">Новости</a>
+                <a href="#about" class="menu__item">Обо мне</a>
+                <a href="_blog.html" class="menu__item">Блог</a>
+                <div class="menu__arrow">
+                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0607 4.93934C15.4749 4.35355 14.5251 4.35355 13.9393 4.93934L4.3934 14.4853C3.80761 15.0711 3.80761 16.0208 4.3934 16.6066C4.97918 17.1924 5.92893 17.1924 6.51472 16.6066L15 8.12132L23.4853 16.6066C24.0711 17.1924 25.0208 17.1924 25.6066 16.6066C26.1924 16.0208 26.1924 15.0711 25.6066 14.4853L16.0607 4.93934ZM16.5 28V6H13.5L13.5 28H16.5Z" fill="white"/>
+                    </svg>   
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="news">
         <div class="container">

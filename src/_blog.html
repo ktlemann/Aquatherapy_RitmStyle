@@ -40,7 +40,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="icons/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" href="icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
     <link rel="stylesheet" href="css/style.min.css">
@@ -70,6 +70,7 @@
                             <a href="index.html#about" class="header__item">Обо мне</a>
                             <a href="_blog.html" class="header__item">Блог</a>
                         </li>
+                        <div class="header__menu-btn">Меню</div>
                     </ul>
                     
                     <button class="header__btn" data-modal="consultation">Записаться на сеанс</button>
@@ -79,14 +80,38 @@
         </div>
     </header>
 
+    <section class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <a href="index.html" class="menu__item">Главная</a>
+                <a href="#services" class="menu__item">Сеансы</a>
+                <a href="#reviews" class="menu__item">Отзывы</a>
+                <a href="#contacts" class="menu__item">Контакты</a>
+                <a href="_news.html" class="menu__item">Новости</a>
+                <a href="#about" class="menu__item">Обо мне</a>
+                <a href="_blog.html" class="menu__item">Блог</a>
+                <div class="menu__arrow">
+                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0607 4.93934C15.4749 4.35355 14.5251 4.35355 13.9393 4.93934L4.3934 14.4853C3.80761 15.0711 3.80761 16.0208 4.3934 16.6066C4.97918 17.1924 5.92893 17.1924 6.51472 16.6066L15 8.12132L23.4853 16.6066C24.0711 17.1924 25.0208 17.1924 25.6066 16.6066C26.1924 16.0208 26.1924 15.0711 25.6066 14.4853L16.0607 4.93934ZM16.5 28V6H13.5L13.5 28H16.5Z" fill="white"/>
+                    </svg>   
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="blog">
         <div class="container">
             <h2 class="title animate__animated animate__fadeInUp wow">Блог</h2>
             <div class="blog__wrapper animate__animated animate__fadeInUp wow">
 
                 <div class="blog__item animate__animated animate__jackInTheBox wow">
-                    <div class="blog__img">
+                    <div class="blog__img blog__img_active">
                         <img src="img/new-element-1_img.jpg" alt="woman">
+                        <div class="blog__eye blog__eye_active">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="blog__text">
                         <div class="blog__date">13.02.2022</div>
@@ -95,12 +120,22 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.
                         </div>
                         <button class="blog__btn">Читать статью</button>
+                        <div class="blog__eye-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
 
-                <div class="blog__item">
-                    <div class="blog__img">
+                <div class="blog__item animate__animated animate__jackInTheBox wow">
+                    <div class="blog__img blog__img_active">
                         <img src="img/new-element-1_img.jpg" alt="woman">
+                        <div class="blog__eye blog__eye_active">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="blog__text">
                         <div class="blog__date">13.02.2022</div>
@@ -109,6 +144,11 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.
                         </div>
                         <button class="blog__btn">Читать статью</button>
+                        <div class="blog__eye-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 

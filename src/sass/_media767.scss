@@ -1,0 +1,267 @@
+@media (max-width: 767.50px) {
+
+    .container {
+        width: 540px;
+    }
+
+    .header {
+        &__wrapper {
+            grid-template: 60px / 150px 150px 155px;
+        }
+        &__logo {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+        &__li {
+            display: none;
+        }
+        &__btn {
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+            font-size: 12px;
+        }
+        &__menu-btn {
+            display: block;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .promo {
+        &__wrapper {
+            padding: 135px 75px 195px;
+            background: url('../img/promo-small_bg.jpg') center (center / cover) no-repeat;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__title {
+            font-size: 52px;
+        }
+    }
+
+    .title {
+        &:before {
+            width: 23px;
+            height: 12px;
+        }
+        &:after {
+            width: 23px;
+            height: 12px;
+        }
+    }
+
+
+    .services {
+        min-height: 600px;
+        padding-top: 60px;
+        .title {
+            font-size: 24px;
+            &:before {
+                left: 23%;
+            }
+            &:after {
+                right: 23%;
+            }
+        }
+        &__wrapper {
+            margin-top: 60px;
+            grid-template: repeat(2, 180px) / repeat(3, 170px);
+            grid-auto-rows: 180px;
+            gap: 12px;
+        }
+        &__item {
+            padding-left: 20px;
+            padding-bottom: 15px;
+            &_vertical {
+                padding-left: 20px;
+                padding-bottom: 30px;
+            }
+        }
+        &__descr {
+            width: 140px;
+            font-size: 13px;
+        }
+    }
+
+
+    .reviews {
+        padding-top: 60px;
+        min-height: 0;
+        .title {
+            font-size: 24px;
+            &:before {
+                left: 33%;
+            }
+            &:after {
+                right: 33%;
+            }
+        }
+        &__wrapper {
+            min-height: 400px;
+            margin-top: 50px;
+            .slick-dots {
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    .about {
+        min-height: 900px;
+        padding-top: 60px;
+        .title {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-size: 9px;
+        }
+    }
+
+
+    .price {
+        min-height: 430px;
+        padding-top: 60px;
+        .title {
+            font-size: 24px;
+            &:before {
+                left: 18%;
+            }
+            &:after {
+                right: 18%;
+            }
+        }
+        &__wrapper {
+            margin-top: 20px;
+            grid-template: minmax(300px, auto) / 250px 200px;
+            grid-auto-rows: minmax(300px, auto);
+            column-gap: 50px;
+        }
+        &__element {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            &:before {
+                left: -30px;
+                width: 16px;
+                height: 8px;
+            }
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__value {
+            font-size: 14px;
+        }
+        &__img-descr {
+            font-size: 16px;
+        }
+    }
+
+
+    .contacts {
+        min-height: 500px;
+        padding-bottom: 30px;
+        &__wrapper {
+            grid-template: minmax(170px, auto) / 260px 250px;
+            grid-auto-rows: minmax(170px, auto);
+            column-gap: 30px;
+        }
+        &__item {
+            padding: 25px 35px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__element {
+            margin-top: 12px;
+        }
+    }
+
+
+
+    .news {
+        padding-top: 40px;
+        .title {
+            font-size: 20px;
+        }
+        &__wrapper {
+            grid-template: repeat(2, 230px) / repeat(2, 240px);
+            grid-auto-rows: 230px;
+            gap: 15px;
+        }
+        &__item {
+            padding: 25px 30px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+
+
+    .news-element {
+        padding-top: 40px;
+        .title {
+            font-size: 20px;
+            &:before {
+                left: 19%;
+            }
+            &:after {
+                right: 19%;
+            }
+        }
+        &__wrapper {
+            margin-top: 40px;
+            grid-template: minmax(400px, auto) / 245px auto;
+            grid-auto-rows: minmax(400px, auto);
+            column-gap: 50px;
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+    }
+
+    .blog {
+        min-height: 0;
+        .title {
+            font-size: 23px;
+        }
+        &__wrapper {
+            grid-template: minmax(300px, auto) / auto; 
+            grid-auto-rows: minmax(300px, auto);
+        }
+        &__item {
+            padding: 10px;
+            grid-template: minmax(200px, auto) / 250px 250px; 
+            grid-auto-rows: minmax(200px, auto);
+            column-gap: 30px;
+        }
+        &__date {
+            width: 80px;
+            height: 25px;
+            font-size: 11px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 10px;
+        }
+        &__btn {
+            margin-top: 20px;
+            width: 115px;
+            height: 30px;
+            font-size: 10px;
+        }
+    }
+}
