@@ -225,7 +225,7 @@
 
 
     .modal {
-        width: 240px;
+        width: calc(100% - 70px);
         min-height: 400px;
         padding: 30px 35px 35px 35px;
         &_thanks {
